@@ -1,2 +1,40 @@
-<p>Login</p>
-<p>username and password</p>
+<html>
+<head>
+    <title>login</title>
+<script>
+function login()
+{
+
+	var username=document.getElementById("username");
+
+	var pass=document.getElementById("password");
+	if(username.value=="")
+	{
+		alert("Please enter your username!");
+		username.focus();
+		return;
+	}
+	if(pass.value=="")
+	{
+		alert("Please enter the password!");
+		return;
+	}
+return true;
+}
+</script>
+</head>
+<body>
+<form>
+    <table  width="350" bgcolor="#ccffcc" style="border-color" border="1" align=center>
+     <tr align=center>
+	<td>UserName</td><td><input type="text" name="username"  id="username"></td>
+     </tr>
+     <tr align=center><td>PassWord</td><td><input type="password" name="password" id="password"></td></tr>
+     <tr align=center><td clospan=2>
+     	<input type="button" value="Login" onclick="login()"/>
+	<input type="reset" value="Reset"/>
+     </tr>
+    </table>
+</form>
+</body>
+</html>
