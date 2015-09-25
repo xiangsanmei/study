@@ -39,4 +39,5 @@ function checkemail(){
 			return false;
 		}
 	window.location.href="home.html"; 
+	return false;
 }
