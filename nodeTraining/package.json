@@ -1,0 +1,8 @@
+{
+  "version": "1.0.0",
+  "name": "nodeTraining",
+  "author": "sam",
+  "dependencies": {
+    "prompt": "0.2.14"
+	}
+}

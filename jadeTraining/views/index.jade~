@@ -1,0 +1,6 @@
+extends layout
+block content
+    div(style='height:210px')
+        for img in imgs
+            a(href='images/baby/'+img title=img data-gallery)
+                img(src='images/baby/'+img  class="img-thumbnail" style='width:140px;height:140px;margin:5px' )
